@@ -1,15 +1,16 @@
 import React from "react";
+import DogFact from "./dogFact";
 
 const renderDogFact = (dogFact) => {
   return (
-    <ul>
-      <li>{dogFact}</li>
-    </ul>
+    <div>
+      <DogFact dogFact={dogFact} />
+    </div>
   );
 };
 
 const DogFacts = ({ factData }) => {
-  return factData.facts.map((dogFact) => renderDogFact(dogFact));
+  return factData.map((dogFact) => renderDogFact(dogFact));
 };
 
 export default DogFacts;

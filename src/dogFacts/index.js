@@ -13,7 +13,7 @@ const DogFactsContainer = () => {
   return (
     <>
       <p>DogFacts Container will go here</p>
-      <DogFacts factData={dogData} />
+      <DogFacts factData={dogData.facts} />
     </>
   );
 };
